@@ -10,4 +10,4 @@ class Measurement(models.Model):
     dateTime = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return '%s %s' % (self.value, self.unit)
+        return '{"value": "%s", "unit":%s, "place": "%s", "dateTime":"%s"}' % (self.value, self.unit, self.place, self.dateTime)

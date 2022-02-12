@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import datetime
 
 from variables.logic.variables_logic import get_variable
 from ..models import Measurement
@@ -26,7 +26,7 @@ def update_measurement(me_pk, new_me):
     measurement.value = new_me["value"]
     measurement.unit = new_me["unit"]
     measurement.place = new_me["place"]
-    measurement.dateTime = new_me["dateTime"]
+    measurement.dateTime = datetime.strptime(new_me["dateTime"], "%Y-%m-%d")
     measurement.save()
     return measurement
 
