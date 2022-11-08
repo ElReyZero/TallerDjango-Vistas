@@ -4,7 +4,7 @@ Workshop done by:
 
 Juan Andrés Romero C - 20201349
 
-* if you want a easy installation use **pipenv\*** else use **requirements.txt**
+* This workshop has multiple dependencies, they can be installed using **pipenv\*** or **requirements.txt**
 
 **pipenv:** can be installed wih:
 
@@ -12,7 +12,7 @@ Juan Andrés Romero C - 20201349
 pip install pipenv
 ```
 
-dont forget to check if you have the right python version: 3.8
+The python version used for this workshop was 3.8
 
 * Executing with pipenv 
 ```bash
